@@ -1,0 +1,113 @@
+
+#container {
+    width:;
+    border: 1px solid grey;
+   
+    margin:0 auto;
+   
+}
+#header {
+    height: 140px;
+    background-image: url(Untitled-design-26.webp);
+    background-size: 100% 100%;
+        
+}
+#brand{
+    float: left;
+}
+h1 a{
+    font-size: 200%;
+    font-weight: bolder;
+    color: floralwhite;
+    text-decoration: none;
+    font-family:fantasy;
+    
+}
+#searchBox{
+    float: right;
+/*    background-color: grey;*/
+    width:500px;
+    height: 70px;
+    padding:45px 45px 0px 45px;
+/*    margin-top: 20px;*/
+    
+}
+.text{
+    float: left;
+    width: 300px;
+    padding: 5px;
+    font-size: 18px;
+    color: black;
+    background: grey url(/images/search.png) right center no-repeat;
+}
+.submit{
+    float: right;
+    padding:8px;
+    font-weight: bold;
+    color:darkgrey;
+    background: black;
+    font-size: 17px
+}
+.clear {
+    clear: both;
+}
+#menu{
+    height: 70px;
+    background: linear-gradient(#8F030C,#45509E);
+    padding: 5px 0;
+}
+ul{
+    list-style: none;
+}
+
+#menu ul li{
+    float: left;
+    padding: 20px 61px;
+    height: 10px;
+    border-right-style: double;
+    border-right-color: black;
+}
+#menu ul li:last-child{
+    border-right: none;
+}
+#menu ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: azure;
+    font-family: fantasy;
+    font-size: 17px;
+    line-height: 20px; 
+    -webkit-transition: font-size 0.8s ease;
+    -moz-transition: font-size 0.8s ease;
+    -ms-transition: font-size 0.8s ease;
+    -o-transition: font-size 0.8s ease;
+    transition: font-size 0.8s ease;
+}
+#menu ul li a:hover{
+    font-size: 25px;
+    font-weight: bolder;
+    color:darkgrey;
+}
+
+#introduction{
+/*    height:300px;*/
+    width: auto;
+    background: linear-gradient(#45509E,#8F030C);
+    padding: 20px;
+/*    margin:.5px 0px;*/
+    text-align: center;
+}
+
+#introduction h3{
+    font-size: 25px;
+    font-family: cursive;
+    color: aliceblue;
+}
+
+#introduction p{
+    font-family: cursive;
+    color: aliceblue;
+    
+}
+
+#form
