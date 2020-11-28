@@ -1,0 +1,1 @@
+Open bootstrap --> carousel --> index.html
