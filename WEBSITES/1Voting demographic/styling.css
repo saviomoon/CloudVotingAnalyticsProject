@@ -7,7 +7,7 @@
    
 }
 #header {
-    height: 140px;
+    height: ;
     background-image: url(Untitled-design-26.webp);
     background-size: 100% 100%;
         
@@ -110,17 +110,24 @@ ul{
     
 }
 
+#dform{
+    
+    background-color: black;
+}
+
 #form {
-    max-width: 500px;
-    margin: 2rem auto;
-    /*background-image: url(1200px-USA_Flag_Map.svg.png);
-    background-size: 100% 100%;
-    background-color: #BC1B1F;*/
+/*    max-width: 800px;*/
+    margin: 0px 500px 0px 600px;
+/*    background-image: url(1200px-USA_Flag_Map.svg.png);*/
+/*    background-size: 100% 100%;*/
+    background-color:#8F030C;
+    
+    
     
 }
 
 #name {
-    width: 60%;
+    width: 40%;
     background-color: darkgray;
     padding:10px;
     border:0;
@@ -129,7 +136,7 @@ ul{
 }
 
 #age {
-    width: 60%;
+    width: 40%;
     background-color: darkgray;
     padding:10px;
     border:0;
@@ -138,7 +145,7 @@ ul{
 }
 
 #professiontype {
-    width: 65%;
+    width: 43%;
     background-color: darkgray;
     padding:10px;
     border:0;
@@ -147,7 +154,7 @@ ul{
 }
 
 #state {
-    width: 65%;
+    width: 43%;
     background-color: darkgray;
     padding:10px;
     border:0;
@@ -156,16 +163,19 @@ ul{
 }
 
 #submit {
-    /* remove default behavior */
   appearance:none;
   -webkit-appearance:none;
-
-  /* usual styles */
   padding:10px;
   border:none;
-  background-color:#8F030C;
+  background-color:#45509E;
   color:#fff;
   font-weight:600;
   border-radius:5px;
   width:100%;
+    cursor: pointer;
+}
+label{
+    color: white;
+    font-family: cursive
+        
 }
