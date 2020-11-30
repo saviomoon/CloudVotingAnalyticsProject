@@ -11,14 +11,11 @@ body {
 /*nav bar--------------------------------------------*/
 
 .navbar-brand {
-    font-size: 50px;
-    
-        
+    font-size: 50px;   
 }
 
 .nav-link {
     font-size: 20px;
-    color: aqua;
 }
 
 /* CUSTOMIZE THE CAROUSEL
@@ -36,7 +33,7 @@ body {
 
 /* Declare heights because of positioning of img element */
 .carousel-item {
-  height: 32rem;
+  height: 34rem;
 }
 .carousel-item > img {
   position: absolute;
