@@ -1,0 +1,12 @@
+CREATE TABLE `voter` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `firstName` varchar(45) NOT NULL,
+  `lastName` varchar(45) NOT NULL,
+  `age` int(11) NOT NULL,
+  `sex` varchar(45) NOT NULL,
+  `state` varchar(45) NOT NULL,
+  `profession` varchar(45) NOT NULL,
+  `ethnicity` varchar(45) NOT NULL,
+  `selection` varchar(45) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;ac
