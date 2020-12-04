@@ -59,5 +59,16 @@ public class VoterDAOImpl implements VoterDAO {
 		String sql = "select count(*) from voter where age>=\""+min+"\" and age<\""+max+"\"";	
 		return jdbcTemplate.queryForObject(sql, Integer.class);
 	}
+	@Override
+	public int getAnalysisForEthnicity(String ethnicity, String selection) {
+		String sql = "select count(*) from voter where selection=\""+selection+"\" and ethnicity=\""+ethnicity+"\"";
+		// TODO Auto-generated method stub
+		return jdbcTemplate.queryForObject(sql, Integer.class);
+	}
+	@Override
+	public int getAnalysisForProfession(String profession, String selection) {
+		String sql = "select count(*) from voter where selection=\""+selection+"\" and profession=\""+ethnicity+"\"";
+		return jdbcTemplate.queryForObject(sql, Integer.class);
+	}
 
 }

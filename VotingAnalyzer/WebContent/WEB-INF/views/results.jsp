@@ -69,22 +69,40 @@
 		    <tr>
 		      <th scope="col">#</th>
 		      <th scope="col">20-30</th>
-		      <th scope="col">Last</th>
-		      <th scope="col">Handle</th>
+		      <th scope="col">30-40</th>
+		      <th scope="col">40-50</th>
+		      <th scope="col">50-60</th>
+		      <th scope="col">60-70</th>
+		      <th scope="col">70-80</th>
+		      <th scope="col">80-90</th>
+		      <th scope="col">90-100</th>
+		      <th scope="col">100-110</th>
 		    </tr>
 		  </thead>
 		  <tbody>
 		    <tr>
 		      <th scope="row">Trump</th>
 		      <td>${age20To30ForTrump}%</td>
-		      <td>Otto</td>
-		      <td>@mdo</td>
+		      <td>${age30To40ForTrump}%</td>
+		      <td>${age40To50ForTrump}%</td>
+		      <td>${age50To60ForTrump}%</td>
+		      <td>${age60To70ForTrump}%</td>
+		      <td>${age70To80ForTrump}%</td>
+		      <td>${age80To90ForTrump}%</td>
+		      <td>${age90To100ForTrump}%</td>
+		      <td>${age100To110ForTrump}%</td>
 		    </tr>
 		    <tr>
-		      <th scope="row">2</th>
-		      <td>Jacob</td>
-		      <td>Thornton</td>
-		      <td>@fat</td>
+		      <th scope="row">Biden</th>
+		      <td>${age20To30ForBiden}%</td>
+		      <td>${age30To40ForBiden}%</td>
+		      <td>${age40To50ForBiden}%</td>
+		      <td>${age50To60ForBiden}%</td>
+		      <td>${age60To70ForBiden}%</td>
+		      <td>${age70To80ForBiden}%</td>
+		      <td>${age80To90ForBiden}%</td>
+		      <td>${age90To100ForBiden}%</td>
+		      <td>${age100To110ForBiden}%</td>
 		    </tr>
 		    <tr>
 		      <th scope="row">3</th>
@@ -97,6 +115,7 @@
 	</div>
 	
 	<div class="mt-5">
+	<label for="validationDefault01">Analysis based on ethnicity</label>
 		  <table class="table table-striped">
 		  <thead>
 		    <tr>
