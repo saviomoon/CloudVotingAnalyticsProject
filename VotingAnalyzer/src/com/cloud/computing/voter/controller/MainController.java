@@ -110,9 +110,6 @@ public class MainController {
  		model.setViewName("results");
 		return model;
 		
-		int indianoralaskaForTrump = voterDao.getAnalysisForEthnicity("American Indian or Alaska Native", "Trump");
-		
-		model.addObject("indianoralaskaForTrump", indianoralaskaForTrump *agePercent );
 		
 		
 	}

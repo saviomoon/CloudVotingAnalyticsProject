@@ -12,6 +12,10 @@
     	<style><%@include file="/WEB-INF/assets/dist/css/bootstrap.min.css"%></style>
     	<!-- Custom styles for this template -->
     	<style><%@include file="/WEB-INF/views/carousel.css"%></style>
+    	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    	<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js" integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous"></script>
 	</head>
 	<header>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
@@ -43,8 +47,8 @@
       <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
     </ol>
     <div class="carousel-inner">
-      <div class="carousel-item active" style="background-color: red;">
-        <img src="img/trump.jpg" class="d-block w-100" alt="..." />
+      <div class="carousel-item active">
+        <img src="https://images.unsplash.com/photo-1550531996-ff3dcede9477?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2552&q=80"  class="d-block w-100" alt="..." />
         <div class="carousel-caption d-none d-md-block">
             <h1>About President Donald J. Trump</h1>
             <p>45th president of the United States of America</p>
@@ -52,15 +56,15 @@
         </div>
       </div>
       <div class="carousel-item">
-        <img src="./122640604_10157602667531104_3356826730129979001_o.jpg" class="d-block w-100" alt="...">
+        <img src="https://dynaimage.cdn.cnn.com/cnn/w_1600/https%3A%2F%2Fcdn.cnn.com%2Fcnnnext%2Fdam%2Fassets%2F170501145558-restricted-joe-biden-nh-speech-0430.jpg" class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
           <h1>About VP Joseph R. Biden</h1>
-          <p>47th VP of the Unitd States of America</p>
+          <p>47th VP of the United States of America</p>
             <p><a class="btn btn-lg btn-primary" href="https://en.wikipedia.org/wiki/Joe_Biden" role="button" target="_blank">Learn more</a></p>
         </div>
       </div>
       <div class="carousel-item">
-        <img src="./124974177_10159438447612923_6920560005760855921_o.jpg" class="d-block w-100" alt="...">
+        <img src="https://www.essence.com/wp-content/uploads/2020/11/GettyImages-1284480343-scaled.jpg?width=800" class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
           <h1>About Kamala Harris</h1>
           <p>Kamala Haris is the Vice-Presidential candidate for 2020 Election.</p>
@@ -68,7 +72,7 @@
         </div>
       </div>
       <div class="carousel-item">
-        <img src="./merlin_171479154_443e9663-32a9-4fa4-81e4-c4a7aded65a4-superJumbo.jpg" class="d-block w-100" alt="...">
+        <img src="https://bloximages.chicago2.vip.townnews.com/madison.com/content/tncms/assets/v3/editorial/3/32/33256b6f-205b-5f51-842b-b29956408af8/5f7e83ff3e51b.image.jpg?resize=1700%2C995" class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
           <h1>About VP Mike Pence</h1>
           <p>Mike Pence is current Vice-President of the United States of America.</p>

@@ -13,6 +13,7 @@ public interface VoterDAO {
 	public int getAnalysisForAge(int min, int max);
 
 	
+	
 	public List<Voter> getAllVoters();
 
 }
