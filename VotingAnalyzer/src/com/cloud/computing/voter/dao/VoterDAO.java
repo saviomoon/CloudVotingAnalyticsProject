@@ -10,7 +10,7 @@ public interface VoterDAO {
 	
 	public int getAnalysisForSex(String sex, String selection);
 	
-	public int getAnalysisForAge(int min, int max);
+	public int getAnalysisForAge(int min, int max, String selection);
 
 	
 	

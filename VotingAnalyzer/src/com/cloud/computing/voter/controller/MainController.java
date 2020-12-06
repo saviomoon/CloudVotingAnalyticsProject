@@ -62,27 +62,26 @@ public class MainController {
 		model.addObject("femaleForBiden",femaleForBiden* percent);
 		model.addObject("neutralForBiden",neutralForBiden* percent);
 		model.addObject("otherForBiden",otherForBiden* percent);
-		model.setViewName("results");
 		
 		
-		int age20To30ForTrump = voterDao.getAnalysisForAge(18, 30);
-		int age30To40ForTrump = voterDao.getAnalysisForAge(30, 40);
-		int age40To50ForTrump = voterDao.getAnalysisForAge(40, 50);
-		int age50To60ForTrump = voterDao.getAnalysisForAge(50, 60);
-		int age60To70ForTrump = voterDao.getAnalysisForAge(60, 70);
-		int age70To80ForTrump = voterDao.getAnalysisForAge(70, 80);
-		int age80To90ForTrump = voterDao.getAnalysisForAge(80, 90);
-		int age90To100ForTrump = voterDao.getAnalysisForAge(90, 100);
-		int age100To110ForTrump = voterDao.getAnalysisForAge(100, 110);
-		int age20To30ForBiden = voterDao.getAnalysisForAge(18, 30);
-		int age30To40ForBiden = voterDao.getAnalysisForAge(30, 40);
-		int age40To50ForBiden = voterDao.getAnalysisForAge(40, 50);
-		int age50To60ForBiden = voterDao.getAnalysisForAge(50, 60);
-		int age60To70ForBiden = voterDao.getAnalysisForAge(60, 70);
-		int age70To80ForBiden = voterDao.getAnalysisForAge(70, 80);
-		int age80To90ForBiden = voterDao.getAnalysisForAge(80, 90);
-		int age90To100ForBiden = voterDao.getAnalysisForAge(90, 100);
-		int age100To110ForBiden = voterDao.getAnalysisForAge(100, 110);
+		int age20To30ForTrump = voterDao.getAnalysisForAge(18, 30, "Trump");
+		int age30To40ForTrump = voterDao.getAnalysisForAge(30, 40, "Trump");
+		int age40To50ForTrump = voterDao.getAnalysisForAge(40, 50, "Trump");
+		int age50To60ForTrump = voterDao.getAnalysisForAge(50, 60, "Trump");
+		int age60To70ForTrump = voterDao.getAnalysisForAge(60, 70, "Trump");
+		int age70To80ForTrump = voterDao.getAnalysisForAge(70, 80, "Trump");
+		int age80To90ForTrump = voterDao.getAnalysisForAge(80, 90, "Trump");
+		int age90To100ForTrump = voterDao.getAnalysisForAge(90, 100, "Trump");
+		int age100To110ForTrump = voterDao.getAnalysisForAge(100, 110, "Trump");
+		int age20To30ForBiden = voterDao.getAnalysisForAge(18, 30, "Biden");
+		int age30To40ForBiden = voterDao.getAnalysisForAge(30, 40, "Biden");
+		int age40To50ForBiden = voterDao.getAnalysisForAge(40, 50, "Biden");
+		int age50To60ForBiden = voterDao.getAnalysisForAge(50, 60, "Biden");
+		int age60To70ForBiden = voterDao.getAnalysisForAge(60, 70, "Biden");
+		int age70To80ForBiden = voterDao.getAnalysisForAge(70, 80, "Biden");
+		int age80To90ForBiden = voterDao.getAnalysisForAge(80, 90, "Biden");
+		int age90To100ForBiden = voterDao.getAnalysisForAge(90, 100, "Biden");
+		int age100To110ForBiden = voterDao.getAnalysisForAge(100, 110, "Biden");
 		
 		int ageTotal = age20To30ForTrump + age30To40ForTrump + age40To50ForTrump + age50To60ForTrump + age60To70ForTrump + age70To80ForTrump
 				+ age80To90ForTrump + age90To100ForTrump + age100To110ForTrump + age20To30ForBiden + age30To40ForBiden + age40To50ForBiden + age50To60ForBiden + age60To70ForBiden + age70To80ForBiden

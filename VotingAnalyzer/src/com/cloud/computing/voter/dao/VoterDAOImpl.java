@@ -55,8 +55,8 @@ public class VoterDAOImpl implements VoterDAO {
 		return jdbcTemplate.queryForObject(sql, Integer.class);
 	}
 	@Override
-	public int getAnalysisForAge(int min, int max) {
-		String sql = "select count(*) from voter where age>=\""+min+"\" and age<\""+max+"\"";	
+	public int getAnalysisForAge(int min, int max, String selection) {
+		String sql = "select count(*) from voter where age>=\""+min+"\" and age<\""+max+"\" and selection=\""+selection+"\"";	
 		return jdbcTemplate.queryForObject(sql, Integer.class);
 	}
 	

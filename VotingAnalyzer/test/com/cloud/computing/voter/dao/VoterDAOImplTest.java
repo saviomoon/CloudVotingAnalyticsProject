@@ -48,7 +48,7 @@ class VoterDAOImplTest {
 	
 	@Test
 	void getAnalysisForAgeTest() {
-		int count = dao.getAnalysisForAge(20,30);
+		int count = dao.getAnalysisForAge(20,30,"Trump");
 		
 		assertTrue(count>0);
 	}
