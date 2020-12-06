@@ -107,10 +107,39 @@ public class MainController {
  		model.addObject("age90To100ForBiden", age90To100ForBiden *agePercent );
  		model.addObject("age100To110ForBiden", age100To110ForBiden *agePercent );
  		model.setViewName("results");
+		
+		
+		int americanIndianForTrump = voterDao.getAnalysisForEthnicity("American Indian or Alaska Native", "Trump");
+		int asianForTrump = voterDao.getAnalysisForEthnicity("Asian", "Trump");
+		int blackForTrump = voterDao.getAnalysisForEthnicity("Black or African American", "Trump");
+		int hispanicForTrump = voterDao.getAnalysisForEthnicity("Hispanic or Latino", "Trump");
+		int nativeForTrump = voterDao.getAnalysisForEthnicity("Native Hawaiian or Other Pacific Islander", "Trump");
+		int whiteForTrump = voterDao.getAnalysisForEthnicity("White", "Trump");
+		int americanIndianForBiden = voterDao.getAnalysisForEthnicity("American Indian or Alaska Native", "Biden");
+		int asianForBiden = voterDao.getAnalysisForEthnicity("Asian", "Biden");
+		int blackForBiden = voterDao.getAnalysisForEthnicity("Black or African American", "Biden");
+		int hispanicForBiden = voterDao.getAnalysisForEthnicity("Hispanic or Latino", "Biden");
+		int nativeForBiden = voterDao.getAnalysisForEthnicity("Native Hawaiian or Other Pacific Islander", "Biden");
+		int whiteForBiden = voterDao.getAnalysisForEthnicity("White", "Biden");
+		
+		int ethnicityTotal = americanIndianForTrump + asianForTrump + blackForTrump + hispanicForTrump + nativeForTrump + whiteForTrump +
+				americanIndianForBiden + asianForBiden + blackForBiden + hispanicForBiden + nativeForBiden + whiteForBiden;
+		
+		double ethnicityPercent = 100/ethnicityTotal;
+		
+		model.addObject("americanIndianForTrump", americanIndianForTrump *ethnicityPercent );
+		model.addObject("asianForTrump", asianForTrump *ethnicityPercent );
+		model.addObject("blackForTrump", blackForTrump *ethnicityPercent );
+		model.addObject("hispanicForTrump", hispanicForTrump *ethnicityPercent );
+		model.addObject("nativeForTrump", nativeForTrump *ethnicityPercent );
+		model.addObject("whiteForTrump", whiteForTrump *ethnicityPercent );
+		model.addObject("americanIndianForBiden", americanIndianForBiden *ethnicityPercent );
+		model.addObject("asianForBiden", asianForBiden *ethnicityPercent );
+		model.addObject("blackForBiden", blackForBiden *ethnicityPercent );
+		model.addObject("hispanicForBiden", hispanicForBiden *ethnicityPercent );
+		model.addObject("nativeForBiden", nativeForBiden *ethnicityPercent );
+		model.addObject("whiteForBiden", whiteForBiden *ethnicityPercent );
 		return model;
-		
-		
-		
 	}
 
 }

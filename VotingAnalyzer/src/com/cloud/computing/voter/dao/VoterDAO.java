@@ -12,7 +12,7 @@ public interface VoterDAO {
 	
 	public int getAnalysisForAge(int min, int max, String selection);
 
-	
+	public int getAnalysisForEthnicity(String ethnicity, String selection);
 	
 	public List<Voter> getAllVoters();
 
