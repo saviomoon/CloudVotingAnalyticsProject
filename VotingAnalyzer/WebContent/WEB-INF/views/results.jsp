@@ -16,7 +16,7 @@
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-            <a class="nav-link active" href="/VotingAnalyzer/">Home <span class="sr-only"></span></a>
+            <a class="nav-link active" href="/VotingAnalyzer/">Voting Demographic Analyzer <span class="sr-only"></span></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="https://www.vote.org/register-to-vote/" target="_blank">Register to Vote</a>
@@ -67,7 +67,7 @@
 		  <table class="table table-striped">
 		  <thead>
 		    <tr>
-		      <th scope="col">#</th>
+		      <th scope="col"></th>
 		      <th scope="col">20-30</th>
 		      <th scope="col">30-40</th>
 		      <th scope="col">40-50</th>
@@ -81,7 +81,7 @@
 		  </thead>
 		  <tbody>
 		    <tr>
-		      <th scope="row">Trump</th>
+		      <th scope="row">Donald J. Trump</th>
 		      <td>${age20To30ForTrump}%</td>
 		      <td>${age30To40ForTrump}%</td>
 		      <td>${age40To50ForTrump}%</td>
@@ -93,7 +93,7 @@
 		      <td>${age100To110ForTrump}%</td>
 		    </tr>
 		    <tr>
-		      <th scope="row">Biden</th>
+		      <th scope="row">Joe Biden</th>
 		      <td>${age20To30ForBiden}%</td>
 		      <td>${age30To40ForBiden}%</td>
 		      <td>${age40To50ForBiden}%</td>
@@ -113,30 +113,33 @@
 		  <table class="table table-striped">
 		  <thead>
 		    <tr>
-		      <th scope="col">#</th>
-		      <th scope="col">marg</th>
-		      <th scope="col">Last</th>
-		      <th scope="col">Handle</th>
+		      <th scope="col"></th>
+		      <th scope="col">Pacific Islander</th>
+		      <th scope="col">Asian</th>
+		      <th scope="col">Black/African American</th>
+		      <th scope="col">Hispanic/Latino</th>
+		      <th scope="col">Native Hawaiin</th>
+		      <th scope="col">White</th>
 		    </tr>
 		  </thead>
 		  <tbody>
 		    <tr>
-		      <th scope="row">1</th>
-		      <td>Mark</td>
-		      <td>Otto</td>
-		      <td>@mdo</td>
+		      <th scope="row">Donald J. Trump</th>
+		      <td align="center">${americanIndianForTrump}%</td>
+		      <td align="center">${asianForTrump}%</td>
+		      <td align="center">${blackForTrump}%</td>
+		      <td align="center">${hispanicForTrump}%</td>
+		      <td align="center">${nativeForTrump}%</td>
+		      <td align="center">${whiteForTrump}%</td>
 		    </tr>
 		    <tr>
-		      <th scope="row">2</th>
-		      <td>Jacob</td>
-		      <td>Thornton</td>
-		      <td>@fat</td>
-		    </tr>
-		    <tr>
-		      <th scope="row">3</th>
-		      <td>Larry</td>
-		      <td>the Bird</td>
-		      <td>@twitter</td>
+		      <th scope="row">Joe Biden</th>
+		      <td align="center">${americanIndianForBiden}%</td>
+		      <td align="center">${asianForBiden}%</td>
+		      <td align="center">${blackForBiden}%</td>
+		      <td align="center">${hispanicForBiden}%</td>
+		      <td align="center">${nativeForBiden}%</td>
+		      <td align="center">${whiteForBiden}%</td>
 		    </tr>
 		  </tbody>
 		</table>

@@ -9,4 +9,4 @@ CREATE TABLE `voter` (
   `ethnicity` varchar(45) NOT NULL,
   `selection` varchar(45) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;ac
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8;
