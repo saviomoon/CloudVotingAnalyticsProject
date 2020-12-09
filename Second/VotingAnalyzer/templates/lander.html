@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Demographic Results </title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!--    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</head>
+<header>
+
+</header>
+<body>
+<div class="container marketing">
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="{{ url_for('goHome') }}">Home <span class="sr-only"></span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.vote.org/register-to-vote/" target="_blank">Register to
+                        Vote</a>
+                </li>
+            </ul>
+            <form class="form-inline mt-2 mt-md-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+<div class="jumbotron jumbotron-fluid dark">
+  <div class="container">
+    <h1 class="display-4">Demographic Analysis</h1>
+
+  </div>
+</div>
+
+    {% block content %}
+
+        <div class="card text-center">
+            <div class="card-header bg-primary">
+                Analysis Based on Sex
+            </div>
+            <div class="card-body">
+                <table class="table table-striped">
+                    <thead>
+                    <tr>
+                        <th scope="col"></th>
+                        <th scope="col">Male</th>
+                        <th scope="col">Female</th>
+                        <th scope="col">Neutral</th>
+                        <th scope="col">Other</th>
+                    </tr>
+                    </thead>
+
+
+                    <tbody>
+                    <tr>
+                        <th scope="row">Donald J. Trump</th>
+
+                        {% for key, value in sexAnalysisTrump.items() %}
+                            {#                      <h1>Key: {{key}}</h1>#}
+                            <td>{{ value }}</td>
+                        {% endfor %}
+
+
+                    </tr>
+                    <tr>
+                        <th scope="row">Joe Biden</th>
+                        {% for key, value in sexAnalysisBiden.items() %}
+                            {#                      <h1>Key: {{key}}</h1>#}
+                            <td>{{ value }}</td>
+                        {% endfor %}
+                    </tr>
+                    </tbody>
+                    {#              {% endfor %}#}
+                </table>
+            </div>
+
+        </div>
+
+<hr>
+
+        <div class="card text-center">
+            <div class="card-header bg-success">
+                Analysis Based on Age Group
+
+            </div>
+            <div class="card-body">
+                <table class="table table-striped">
+                    <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">20-30</th>
+                        <th scope="col">30-40</th>
+                        <th scope="col">40-50</th>
+                        <th scope="col">50-60</th>
+                        <th scope="col">60-70</th>
+                        <th scope="col">70-80</th>
+                        <th scope="col">80-90</th>
+                        <th scope="col">90-100</th>
+                        <th scope="col">100-110</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row">Trump</th>
+                        {% for key, value in ageAnalysisForTrump.items() %}
+                            {#                      <h1>Key: {{key}}</h1>#}
+                            <td>{{ value }}</td>
+                        {% endfor %}
+                    </tr>
+                    <tr>
+                        <th scope="row">Biden</th>
+                        {% for key, value in ageAnalysisForBiden.items() %}
+                            {#                      <h1>Key: {{key}}</h1>#}
+                            <td>{{ value }}</td>
+                        {% endfor %}
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+
+
+
+        <div class="card text-center">
+        <div class="card-header bg-info">
+            Analysis based on Ethnicity
+
+        </div>
+        <div class="card-body">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">American Indian or Alaska Native</th>
+                <th scope="col">Asian</th>
+                <th scope="col">Black or African American</th>
+                <th scope="col">Hispanic or Latino</th>
+                <th scope="col">Native Hawaiian or Other Pacific Islander</th>
+                <th scope="col">White</th>
+
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th scope="row">Trump</th>
+                {% for key, value in ethnicityAnalysisForTrump.items() %}
+                    {#                      <h1>Key: {{key}}</h1>#}
+                    <td>{{ value }}</td>
+                {% endfor %}
+            </tr>
+            <tr>
+                <th scope="row">Biden</th>
+                {% for key, value in ethnicityAnalysisForBiden.items() %}
+                    {#                      <h1>Key: {{key}}</h1>#}
+                    <td>{{ value }}</td>
+                {% endfor %}
+            </tr>
+            </tbody>
+        </table>
+    {% endblock %}
+    </div>
+
+    </div>
+
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+</html>

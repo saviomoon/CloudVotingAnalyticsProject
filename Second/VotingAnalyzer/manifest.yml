@@ -1,0 +1,4 @@
+applications:
+- name: votinganalyzer
+  random-route: true
+  memory: 128M
